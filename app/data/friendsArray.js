@@ -1,0 +1,53 @@
+// create friend array
+let friendsArray = [{
+    name:'Bonni',
+    photo:'app/assets/images/bonnie.jpg',
+    scores:[1,4,5,3,3,1,4,5,3,3]
+},
+{
+    name:'Ed',
+    photo:'app/assets/images/gein.jpg',
+    scores:[2,4,5,4,3,2,4,5,4,3] 
+},
+{
+    name:'Ted',
+    photo:'app/assets/images/ted.jpg',
+    scores:[3,4,5,2,3,3,4,5,2,3]
+},
+{
+    name:'Richard',
+    photo:'app/assets/images/richard-ramirez.jpg',
+    scores:[1,3,4,2,5,1,3,4,2,5]
+},
+{
+    name:'Joseph',
+    photo:'app/assets/images/kallinger.jpg',
+    scores:[5,5,5,2,3,5,5,5,2,3]
+},
+{
+    name:'Richard',
+    photo:'app/assets/images/Richard-Kuklinski-1986.jpg',
+    scores:[1,1,2,2,3,3,4,4,5]
+},
+{
+    name:'John',
+    photo:'app/assets/images/john.jpg',
+    scores:[5,4,4,3,3,2,2,1,1,5]
+},
+{
+    name:'Belle',
+    photo:'app/assets/images/bellegunness.jpg',
+    scores:[1,2,3,4,5,1,2,3,4,5]
+},
+{
+    name:'Jeffrey',
+    photo:'app/assets/images/dahmer-high-school.jpeg',
+    scores:[5,4,3,2,1,5,4,3,2,1]
+},
+{
+    name:'Ed',
+    photo:'app/assets/images/Ed.jpg',
+    scores:[5,4,3,2,1,5,4,3,2,1]
+}
+]
+module.exports(friendsArray);

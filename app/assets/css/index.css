@@ -6,6 +6,8 @@
             right: 0;
             bottom: 0;
             animation: bg-animation 5s infinite;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
         }
 
         @-webkit-keyframes bg-animation {
@@ -23,14 +25,9 @@
         }
 
         a {
-            text-decoration: none;
-        }
-
-        body {
-            /* color: deepskyblue; */
-            text-align: center;
-            font-family: 'Quicksand', sans-serif;
-            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            text-decoration-style: none;
+            justify-self: right;
+            align-self: baseline;
         }
 
         #content {

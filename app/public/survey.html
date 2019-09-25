@@ -1,187 +1,176 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: https://fonts.google.com/?query=quic&selection.family=Quicksand;">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Comfortaa|Quicksand&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/app/assets/css/survey.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/survey.css">
 
     <title>Document</title>
 </head>
 
-<body> -->
+<body>
 
-    <!-- <div class='background' id="content">
+    <div class='background' id="content">
         <div class="one">
             <h3 class="logo">FriendFinder</h3>
         </div>
         <div class="two"></div>
         <div class="three">
             <a id="back" href="index.html">
-                < go back</a> <h3 class="contact_h3">About You</h3>
-                    <p class="mainparagraph">
-                        Take 5 minutes to complete our survey! Afterwards you'll be matched with others near you, just
-                        like you.
-                        The rules are simple, select 1 if you strongly disagree or 5 if you strongly agree. Sit back and
-                        relax,
-                        your new friend is right around the corner.
-                    </p>
+                go back</a>
+            <h3 class="contact_h3">About You</h3>
+            <p class="mainparagraph">
+                Take 5 minutes to complete our survey! Afterwards you'll be matched with others near you, just
+                like you.
+                The rules are simple, select 1 if you strongly disagree or 5 if you strongly agree. Sit back and
+                relax,
+                your new friend is right around the corner.
+            </p>
 
-                    <div class="form-group">
-                        <input id="name" type="text" class="form-control" placeholder="Name (Required)">
-                    </div>
-                    <div class="form-group">
-                        <input id="photo" type="text" class="form-control"
-                            placeholder="Link to Profile Photo (Required)">
-                    </div>
+            <div class="form-group">
+                <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+            </div>
+            <div class="form-group">
+                <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+            </div>
 
-                    <label class="question" for="question1">1. I don’t care if I upset someone to get what I want
-                    </label>
+            <label class="question" for="question1">1. I don’t care if I upset someone to get what I want
+            </label>
 
-                    <select id="input1">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select>
+            <select id="input1">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <label class="question" for="question2">2. Before criticising somebody, I try to imagine and
-                        understand how
-                        it would make them feel
-                    </label>
+            <label class="question" for="question2">2. Before criticising somebody, I try to imagine and
+                understand how
+                it would make them feel
+            </label>
 
-                    <select id="input2">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select>
+            <select id="input2">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <label class="question" for="question3">3. I know how to make another person feel guilty</label>
+            <label class="question" for="question3">3. I know how to make another person feel guilty</label>
 
-                    <select id="input3">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select>
+            <select id="input3">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <label class="question" for="question4">4. I tend to focus on my own thoughts and ideas rather than
-                        on what
-                        others might be thinking</label>
+            <label class="question" for="question4">4. I tend to focus on my own thoughts and ideas rather than
+                on what
+                others might be thinking</label>
 
-                    <select id="input4">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select>
+            <select id="input4">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <label class="question" for="question5">5. What other people feel doesn't concern me</label>
+            <label class="question" for="question5">5. What other people feel doesn't concern me</label>
 
-                    <select id="input5">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select>
+            <select id="input5">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <label class="question" for="question6">6. I always try to consider the other person's feelings
-                        before I do
-                        something</label>
+            <label class="question" for="question6">6. I always try to consider the other person's feelings
+                before I do
+                something</label>
 
-                    <select id="input6">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select>
+            <select id="input6">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <label class="question" for="question7">7. I know how to pay someone compliments to get something
-                        out of
-                        them</label>
+            <label class="question" for="question7">7. I know how to pay someone compliments to get something
+                out of
+                them</label>
 
-                    <select id="input7">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select>
+            <select id="input7">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <label class="question" for="question8">8. I don't usually appreciate the other person's viewpoint
-                        if I
-                        don't agree with it</label>
+            <label class="question" for="question8">8. I don't usually appreciate the other person's viewpoint
+                if I
+                don't agree with it</label>
 
-                    <select id="input8">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select>
+            <select id="input8">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <label class="question" for="question9">9. Seeing people cry doesn’t really upset me</label>
+            <label class="question" for="question9">9. Seeing people cry doesn’t really upset me</label>
 
-                    <select id="input9">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select>
+            <select id="input9">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <label class="question" for="question10">10. I am good at predicting how someone will feel</label> -->
+            <label class="question" for="question10">10. I am good at predicting how someone will feel</label>
 
-                    <!-- <select id="input10">
-                        <option value="">Please choose an option</option>
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                    </select> -->
+            <select id="input10">
+                <option value="">Please choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
 
-                    <!-- <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">
-                        Submit
-                    </button> --> 
-
-        <!-- </div>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">
+                Submit
+            </button>
+        </div>
         <div class="four"></div>
-        <div class="five"></div>
-    </div> -->
+        <div class="five">
+            <img id="survey-img">
+            <p id="survey-name"></p>
+        </div>
+    </div>
 
-<!-- </body>
-<script src="/app/assets/javascript/survey.js"></script>
-
-</html> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>text</h1>
 </body>
+<script src="/survey.js"></script>
+
 </html>

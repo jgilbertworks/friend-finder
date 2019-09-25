@@ -23,41 +23,44 @@ document.getElementById('contact-submit').addEventListener('click', function (ev
     if (valid == true) {
         // The data we are going to send in our request
         let user = {
-            question1: document.getElementById('input1').value,
-            question2: document.getElementById('input2').value,
-            question3: document.getElementById('input3').value,
-            question4: document.getElementById('input4').value,
-            question5: document.getElementById('input5').value,
-            question6: document.getElementById('input6').value,
-            question7: document.getElementById('input7').value,
-            question8: document.getElementById('input8').value,
-            question9: document.getElementById('input9').value,
-            question10: document.getElementById('input10').value
+            name: document.getElementById('name').value,
+            photo: document.getElementById('photo').value.trim(),
+            scores: [
+                parseInt(document.getElementById('input1').value),
+                parseInt(document.getElementById('input2').value),
+                parseInt(document.getElementById('input3').value),
+                parseInt(document.getElementById('input4').value),
+                parseInt(document.getElementById('input5').value),
+                parseInt(document.getElementById('input6').value),
+                parseInt(document.getElementById('input7').value),
+                parseInt(document.getElementById('input8').value),
+                parseInt(document.getElementById('input9').value),
+                parseInt(document.getElementById('input10').value)
+            ]
         };
-
 
         console.log(user);
 
-        const url = 'http://localhost:8080/api/public/survey';
-        // The data we are going to send in our request
+        postRequest('/api/friends', user)
+            .then(function (data) {
+                console.log(data);
+                document.getElementById('survey-img').setAttribute("src", data.photo);
+                let x = document.getElementById('survey-name').innerHTML(data.name);
 
-        fetch(url, {
-                method: 'POST', // *GET, POST, PUT, DELETE, etc.
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                referrer: 'no-referrer', // no-referrer, *client
-                body: JSON.stringify(user), // body data type must match "Content-Type" header
             })
-            .then(response => {
-                return response.json()
-            })
-            .then(data => {
-                console.log(data)
-            });
 
+        function postRequest(url, data) {
+            return fetch(url, {
+                    credentials: 'same-origin', // 'include', default: 'omit'
+                    method: 'POST', // 'GET', 'PUT', 'DELETE', etc.
+                    body: JSON.stringify(data), // Coordinate the body type with 'Content-Type'
+                    headers: new Headers({
+                        'Content-Type': 'application/json'
+                    }),
+                })
+                .then(response => response.json())
+        }
     } else {
         alert('form incomplete');
     }
-
 });

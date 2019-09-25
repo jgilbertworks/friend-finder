@@ -1,6 +1,5 @@
 document.getElementById('contact-submit').addEventListener('click', function (event) {
     event.preventDefault();
-
     //form validation
     let valid = true;
 
@@ -40,13 +39,12 @@ document.getElementById('contact-submit').addEventListener('click', function (ev
         };
 
         console.log(user);
-
+    
         postRequest('/api/friends', user)
             .then(function (data) {
                 console.log(data);
                 document.getElementById('survey-img').setAttribute("src", data.photo);
-                let x = document.getElementById('survey-name').innerHTML(data.name);
-
+                document.getElementById('survey-name').innerHTML = data.name;
             })
 
         function postRequest(url, data) {
